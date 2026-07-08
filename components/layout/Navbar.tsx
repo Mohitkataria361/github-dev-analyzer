@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { GitBranch } from "lucide-react";
 import { Input } from "@/components/ui/input";
+import SearchBar from "./SearchBar";
 
 const Navbar = () => {
   return (
@@ -21,11 +22,7 @@ const Navbar = () => {
 
         {/* Center */}
         <div className="hidden w-full max-w-md px-6  md:block">
-          <Input
-            type="text"
-            className="w-full rounded-md border border-gray-950 bg-white px-4 py-2 text-sm text-gray-700 placeholder-gray-400 focus:border-gray-600 focus:ring focus:ring-blue-200"
-            placeholder="Search GitHub Username..."
-          />
+          <SearchBar/>
         </div>
 
         {/* Right */}
